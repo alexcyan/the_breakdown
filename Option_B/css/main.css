@@ -1,0 +1,49 @@
+/* This is to turn off the template borders
+* {
+  border: 1px solid black;
+}
+*/
+
+/* This is the first row of your landing page which includes an image in the background and the 'greeting' script in the front */
+.alpha {
+  height: 400px;
+  text-align: center; /*Remember that text-align works wonders to center objects on your page */
+  background-image: url("http://placehold.it/1680x600/b3ffff/ffffff"); /* This is an over-sized placeholder to demonstrate the general size of the area */
+}
+/* This was added to give the 'greeting' a more centered look within the div */
+.alpha h2 {
+  margin-top: 150px;
+}
+/* This the second row of your landing page which includes 3 separate columns that contain images confined to circles and captions/text */
+.beta {
+  height: 300px;
+  text-align: center;
+}
+/* These are the images bound to circles within your second row */
+.mini_circle {
+  height: 160px;
+  width: 160px;
+  background-color: #efefef;
+  border-radius: 100%;
+}
+/* This is the third row of your landing page which serves as a divider between the 3 columns above and the footer area below */
+/* Note that divider_1 is actually a spaceholder for the left and right side of the divider itself */
+.divider_1 {
+  height: 40px;
+}
+/* This is divider_2 which is the actual information area of your row Tip(You could put a button or a link here to display something) */
+.divider_2 {
+  height: 40px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+/* This is the fourth row of your landing page that could contain your client reviews as shown in the sample copy Ian posted */
+.foot {
+  height: 300px;
+  text-align: center;
+}
+/* Once again a specific selection was made to give the h3 within the 4th row some margin spacing from the top */
+.foot h3 {
+  margin-top: 100px;
+}

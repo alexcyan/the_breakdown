@@ -1,0 +1,111 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Mobile Landing Page</title>
+  <!-- Remember to consider the 'Hierarchy' of your links *Whichever one is at the bottome will take priority* !-->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- This is a pre-made style sheet similar to that of reset.css !-->
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+
+<!-- Beginning of The First Row !-->
+    <section class="row">
+      <div class="columns small-12 large-12 alpha">
+
+        <!--Span was used to define "variable" name!-->
+          <h2>Hi There Friend,<span id="greeting">hello!</span></h2>
+
+            <script type="text/javascript">
+            /* This line creates a date object for the browser and assigns it to the variable called new Date() */
+              var myDate = new Date();
+
+            /*The 'Object' is affected by the 'Method' (object.scream) the (.) tells where to pull from
+            -parameters for if the hour is before noon */
+              if ( myDate.getHours() < 12 )
+              {
+                document.getElementById('greeting').innerHTML = "Good Morning!";
+              }
+              else
+
+              if ( myDate.getHours() >=12 && myDate.getHours() <=17 )
+              {
+                document.getElementById('greeting').innerHTML = "Good Afternoon!";
+              }
+              else
+
+              if ( myDate.getHours() > 17 && myDate.getHours() <=24 )
+              {
+                document.getElementById('greeting').innerHTML = "Good Evening!";
+              }
+              else {
+                document.getElementById('greeting').innerHTML = "I Guess It's Party Time!";
+              }
+
+            </script>
+      </div>
+    </section>
+<!-- End of The First Row !-->
+
+<!-- Beginning of The Second Row !-->
+    <section class="row">
+      <div class="columns small-4 large-4 beta">
+        <figure>
+          <img class="mini_circle" src="http://placehold.it/160/33ffff/ffffff" alt="" />
+            <figcaption>
+              This is the text under your mini circles.
+            </figcaption>
+        </figure>
+      </div>
+
+      <div class="columns small-4 large-4 beta">
+        <figure>
+          <img class="mini_circle" src="http://placehold.it/160/33ffff/ffffff" alt="" />
+            <figcaption>
+              This is the text under your mini circles.
+            </figcaption>
+        </figure>
+      </div>
+
+      <div class="columns small-4 large-4 beta">
+        <figure>
+          <img class="mini_circle" src="http://placehold.it/160/33ffff/ffffff" alt="" />
+            <figcaption>
+              This is the text under your mini circles.
+            </figcaption>
+        </figure>
+      </div>
+
+    </section>
+<!-- End of the Second Row !-->
+
+
+<!-- Beginning of the Third Row !-->
+    <section class="row">
+      <div class="columns small-1 large-2 divider_1"></div>
+        <div class="columns small-10 large-8 divider_2">
+          <h2>&middot; &middot; &middot;</h2>
+        </div>
+      <div class="columns small-1 large-2 divider_1"></div>
+    </section>
+<!-- End of Third Row !-->
+
+<!-- Beginning of The Fourth Row !-->
+  <section class="row">
+    <div class="columns small-12 large-12 foot">
+      <h3>This is a placeholder for all the information that you wish to put into the footer area of your landing page.</h3>
+    </div>
+  </section>
+<!-- End of The Fourth Row !-->
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
