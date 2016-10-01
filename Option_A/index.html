@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Keep in mind that the order in which your links are placed defines the HIERARCHY, closest to the bottom overules all !-->
+    <link rel="stylesheet" href="css/normalize.css" media="screen">
+    <link rel="stylesheet" href="css/foundation.css" media="screen">
+    <link rel="stylesheet" href="css/main.css" media="screen" charset="utf-8">
+    <title>Option A Landing Page Sample</title>
+  </head>
+  <body>
+
+<!-- Beginning of Row One: This area contains your NAME -->
+    <section class="row alpha">
+      <div class="columns small-12 large-12 name">
+        <h2>Your Name Here</h2>
+      </div>
+    </section>
+<!-- End of Row One -->
+
+<!-- Beginning of Row Two: This area contains your 'greeting' script -->
+    <section class="row beta">
+      <!--Span was used to define "variable" name!-->
+    <h2><span id="greeting">hello!</span></h2>
+      <script type="text/javascript">
+      /* This line creates a date object for the browser and assigns it to the variable called new Date() */
+        var myDate = new Date();
+
+      /*The 'Object' is affected by the 'Method' (object.scream) the (.) tells where to pull from
+      -parameters for if the hour is before noon */
+        if ( myDate.getHours() < 12 )
+        {
+          document.getElementById('greeting').innerHTML = "Good Morning!";
+        }
+        else
+
+        if ( myDate.getHours() >=12 && myDate.getHours() <=17 )
+        {
+          document.getElementById('greeting').innerHTML = "Good Afternoon!";
+        }
+        else
+
+        if ( myDate.getHours() > 17 && myDate.getHours() <=24 )
+        {
+          document.getElementById('greeting').innerHTML = "Good Evening!";
+        }
+        else {
+          document.getElementById('greeting').innerHTML = "I Guess It's Party Time!";
+        }
+
+      </script>
+    </section>
+<!-- End of Row Two -->
+
+<!-- Beginning of Row Three: This area contains your image -->
+      <section class="row gamma">
+        <div class="small-12 large-12">
+          <img src="http://placehold.it/300/c8f442/ffffff" alt="place_marker" />
+        </div>
+      </section>
+<!-- End of Row Three -->
+
+  </body>
+</html>

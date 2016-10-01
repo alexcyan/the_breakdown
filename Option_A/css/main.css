@@ -1,0 +1,83 @@
+/* This is the option to turn on/off template borders
+* {
+  border: 1px solid black;
+}
+*/
+
+/* This is the Beginning of Row One which contains your NAME*/
+.alpha {
+  text-align: center;
+  height: 200px; /* Note: Using Foundations, you need to define a height */
+}
+/* A specific selection of h2 in the first row was made to add margin spacing */
+.alpha h2 {
+  margin-top: 80px;
+  font: 40px Arial, sans-serif;
+  color: black;
+}
+/* This is the End of Row One */
+
+/* This is the Beginning of Row Two which contains your 'greeting' script */
+.beta {
+  text-align: center;
+  height: 100px;
+}
+
+/* This is the selection of your 'greeting' script in context to the font */
+#greeting {
+  font: 80px "Comic Sans MS", sans-serif;
+  color: black;
+  text-transform: uppercase;
+}
+/* This is the End of Row Two */
+
+/* This is the Beginning of Row Three which contains your picture bound in a Circle */
+img {
+  background-color: white;
+  /* Note: This background color does not show because I am using a placeholder via placehold.it */
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  /* Note: 100% radius = circle */
+  margin-top: 180px;
+}
+.gamma {
+  text-align: center;
+}
+/* This is the End of Row Three */
+
+
+
+/* ==== THIS IS THE BEGINNING OF YOUR MEDIA QUERIES WHICH WILL CONTROL THE SIZE VARIATION OF OBJECTS ON DIFFERENT PLATFORMS ==== */
+/* == @media QUERIES ARE USED BY FOUNDATIONS TO RESIZE YOUR INFORMATION == */
+@media screen and (min-width:0px) and (max-width:700px) {
+  /* CSS code for SMALL SCREENS */
+  /* The lines below change the height of Row One when displayed on mobile */
+  .alpha {
+    height: 120px;
+  }
+  /* The Lines below change the size and the top margin spacing of 'YOUR NAME' */
+  .alpha h2 {
+    font: 20px Arial, cursive;
+    color: #a4efff;
+    margin-top: 40px;
+  }
+  /* The lines below change the height of Row Two when displayed on mobile */
+  .beta {
+    height: 40px;
+  }
+  /* The lines below change the size of your 'greeting' script text */
+  #greeting {
+    font: 40px "Comic Sans MF", cursive;
+  }
+  /* The lines below change the height and width of your img when displayed on mobile */
+  img {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-top: 100px;
+  }
+  /* Ignore the fact that it says 300 x 300 when reduced in size within the circle, the placeholder does not adjust when displayed smaller */
+ /* === THIS AREA WAS LEFT BLANK ON PURPOSE, BUT YOU SHOULD INPUT YOUR PARAMETERS FOR HOW YOU WANT ALL ROWS AND OBJECTS TO BE DISPLAYED ON LARGER FORMATS ===> */
+}
