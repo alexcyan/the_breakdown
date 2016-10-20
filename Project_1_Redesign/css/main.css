@@ -1,0 +1,286 @@
+/*
+* {
+  border: 1px solid black;
+}
+*/
+
+/* BEGINNING OF HEADER PRESETS */
+h1 {
+  font-size: 4em;
+}
+h2 {
+  font-size: 3em;
+  font-family: 'Satisfy', cursive, sans-serif;
+}
+section h2 {
+  height: 80px;
+  padding-top: 10px;
+}
+h3 {
+  font-size: 1.5em;
+}
+/* END OF HEADER PRESETS */
+
+/* BEGINNING OF SPACING PRESETS */
+.center {
+  text-align: center;
+}
+.no-pad {
+  padding: 0px;
+}
+.no-marg {
+  margin: 0px;
+}
+/* END OF SPACING PRESETS */
+
+/* BEGINNING OF FONT PRESETS */
+.caps {
+  text-transform: uppercase;
+}
+/* END OF FONT PRESETS */
+
+/* BEGINNING OF COLOR PRESETS */
+.black {
+  color: #000000;
+}
+.white {
+  color: #ffffff;
+}
+.orange {
+  color: orange;
+}
+.backfade {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.backblack {
+  background-color: #000000;
+}
+/* END OF COLOR PRESETS */
+
+/* BEGINNING OF NAVIGATION STYLING */
+.top-bar-left a {
+  font-size: .8em;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.navigation a:link, a:visited{
+  color: #ffffff;
+}
+.navigation a:hover {
+  color: orange;
+}
+a:link:active, a:visited:active {
+  color: #b35900;
+}
+/* END OF NAVIGATION STYLING */
+
+/* [][][] BEGINNING OF HOME PAGE [][][] */
+
+/* BEGINNING OF Chili STYLING */
+.chili {
+  height: 10px;
+  background-image: url("../images/chili2.png");
+}
+/* END OF Chili STYLING */
+
+/* BEGINNING OF CONTACT WIDGET STYLING */
+.contact div {
+  height: 200px;
+}
+.contact p {
+  font-size: 1.4em;
+  padding: 20px;
+  font-family: 'Verdana',arial, sans-serif;
+  border:2px dashed #ffffff;
+}
+.contact img {
+  margin-top: 5px;
+}
+/* END OF CONTACT WIDGET STYLING */
+
+/* BEGINNING OF SPECIALS STYLING */
+.specials figure {
+  height: 600px;
+}
+.specials figure img {
+  margin: 25% 0 0 25%;
+}
+.specials figcaption p {
+  padding: 30px;
+  font-size: 1.3em;
+  font-family: 'Amatic SC', sans-serif;
+  font-weight: bold;
+}
+/* END OF SPECIALS STYLING */
+
+/* BEGINNING OF REVIEWS STYLING */
+.reviews div {
+  height: 320px;
+  padding-top: 20px;
+  border-bottom: 2px dashed #ffffff;
+}
+.reviews h3 {
+  font-family: 'Satisfy', cursive;
+}
+.reviews p {
+  padding: 20px;
+  font-size: 1.1em;
+  font-family: 'Amatic SC', sans-serif;
+  font-weight: bold;
+}
+.reviews a:hover {
+  color: #FF0000;
+}
+/* END OF REVIEWS STYLING */
+/* [][][] END OF HOMEPAGE [][][] */
+
+/*/////////////////////////////////////////////////////////////////////////*/
+
+/* [][][] BEGINNING OF MENU STYLING [][][] */
+.dishes {
+  text-align: center;
+}
+.dishes em {
+  font-size: 1.5em;
+  font-family: 'Amatic SC', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.detail {
+  font-size: 0.8em;
+}
+.menu_400 {
+  height: 400px;
+}
+.menu_800 {
+  height: 800px;
+}
+.menu_1000 {
+  height: 1000px;
+}
+.the_menu {
+  list-style: none;
+}
+.menu_subtitle {
+	font-size: 2.5em;
+ 	font-family: 'Satisfy', cursive;
+	text-align: center;
+
+}
+/* [][][] END OF MENU STYLING [][][] */
+
+/*/////////////////////////////////////////////////////////////////////////*/
+
+/* [][][] BEGINNING OF ABOUT STYLING [][][] */
+.caros {
+	height: 250px;
+}
+.about figcaption h2 {
+font-family: 'Amatic SC', cursive;
+font-size: 2em;
+}
+.about figcaption p {
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.2em;
+  word-spacing: 2px;
+  padding: 20px;
+  text-align: justify;
+  font-weight: bold;
+}
+/* [][][] END OF ABOUT STYLING [][][] */
+
+/*/////////////////////////////////////////////////////////////////////////*/
+
+/* BEGINNING OF FOOTER STYLING */
+.social {
+  padding-top: 20px;
+}
+footer {
+  background-image: url("../images/chili.png");
+}
+footer p {
+  padding-top: 20px;
+  font-family: 'Amatic SC', sans-serif;
+}
+/* END OF FOOTER STYLING */
+
+/* BEGINNING OF TABLET FORMATTING */
+@media only screen and (min-width : 640px) {
+  .navigation a {
+    font-size: 1.6em;
+  }
+  .spacer2 {
+    height: 250px;
+    font-size: 8em;
+  }
+  .contact div {
+    height: 250px;
+  }
+  .specials figure img {
+    margin: 100px 0 0 0;
+  }
+  .specials figcaption p {
+    font-size: 1.7em;
+    padding: 50px;
+  }
+  .reviews div {
+    height: 500px;
+  }
+  .reviews h3 {
+    font-size: 2.2em;
+  }
+  .reviews p {
+    font-size: 1.2em;
+  }
+  footer p {
+    font-size: 1.2em;
+  }
+  .about figure img {
+    margin-top: 45%;
+  }
+  .about figcaption h2 {
+  font-size: 3em;
+  padding-top: 10px;
+  }
+/* END OF TABLET FORMATTING */
+
+/* BEGINING OF DESKTOP FORMATTING */
+@media only screen and (min-width : 992px) {
+  .spacer2 {
+    height: 250px;
+    font-size: 8em;
+  }
+  .contact div {
+    height: 200px;
+  }
+  .specials figure img {
+    margin: 10px 0 0 0;
+  }
+  .specials figcaption p {
+    font-size: 2em;
+    padding: 50px;
+  }
+  .reviews div {
+    height: 400px;
+  }
+  .reviews h3 {
+    font-size: 2.2em;
+  }
+  .reviews p {
+    font-size: 1.5em;
+  }
+  footer p {
+    font-size: 1.2em;
+  }
+  .about figure img {
+    margin-top: 15%;
+  }
+  .about figcaption h2 {
+  font-size: 4em;
+  padding-top: 10px;
+  }
+  .about figcaption p {
+    font-size: 1.3em;
+  }
+/* END OF DESKTOP FORMATTING */
