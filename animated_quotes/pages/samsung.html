@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Quotes</title>
+    <link rel="stylesheet" href="../css/normalize.css" media="screen">
+    <link rel="stylesheet" href="../css/app.css" media="screen">
+    <link rel="stylesheet" href="../css/foundation.css" media="screen">
+    <link rel="stylesheet" href="../css/main.css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Gravitas+One|Permanent+Marker|Quicksand|Raleway|Roboto|Rock+Salt|Rubik+One" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="../js/jquery.backstretch.min.js"></script>
+
+  </head>
+
+  <body>
+    <!-- BEGINNING OF NAVIGATION -->
+    <section class="row subnav">
+      <h1 class="columns large-12 medium-12 small-12">Animated Quotes</h1>
+      <ul class="columns large-12 medium-12 small-12">
+        <li class="links"><a href="../index.html">Home</a></li>
+        <li class="links"><a href="apple.html">Apple</a></li>
+        <li class="links"><a href="samsung.html">Samsung</a></li>
+        <li class="links"><a href="adobe.html">Adobe</a></li>
+      </ul>
+    </section>
+    <!-- END OF NAVIGATION -->
+
+    <!-- BEGINNING OF SAMSUNG ANIMATED QUOTE -->
+    <figure class="row samsung">
+
+      <script>
+        $(".samsung").backstretch(["../images/note7.png"]);
+      </script>
+
+      <img id="sam" src="../images/samsung.png" alt="" />
+              <figcaption class="samcap">
+                <h3><strong>Survivalist Tip &num;186</strong></h3>
+                  <h3>"Who needs <span id="matches">matches</span> when you have a <span>Galaxy Note7</span>?"</h3>
+                <p>"We know what we're doing here, but at the same time we're so <em>'cutting-edge'</em> that we almost don't really know what we're doing."<br><em id="employee">-David Richmann</em></p>
+              </figcaption>
+    </figure>
+    <!-- END OF SAMSUNG ANIMATED QUOTE -->
+
+    <!-- SCRIPT LOADERS -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery.backstretch.js"></script>
+  </body>
+  </html>
